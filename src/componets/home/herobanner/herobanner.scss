@@ -1,0 +1,84 @@
+@import '../../../sass/global.scss';
+
+.herobanner-background {
+    background-image: url(../../../assets/images/349063638_561517149503680_9220730243821385482_n.jpg);
+    padding: var(--background-padding);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .grid-background {
+        @include grid-2;
+        align-items: center;
+        width: 100%;
+
+        .background-text {
+            h2 {
+                max-width: 350px;
+                color: var(--theam-color-white);
+                @include heading-2;
+            }
+
+            p {
+                margin-top: 20px;
+                max-width: var(--text-width);
+                color: var(--theam-color-white);
+                @include paragraph;
+            }
+
+            .button-1 {
+                .button {
+                    button {
+                        margin-top: 20px;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+
+        .image {
+            img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .herobanner-background {
+       
+        .grid-background {
+            @include grid-1;
+
+            .background-text {
+                h2 {
+                    max-width: 400px;
+                    color: var(--theam-color-white);
+                    @include heading-3;
+                }
+
+                p {
+                    margin-top: 20px;
+                    max-width: var(--text-width);
+                    color: var(--theam-color-white);
+                    @include paragraph;
+                }
+
+                .button-1 {
+                    .button {
+                        button {
+                            margin-top: 20px;
+                            border-radius: 30px;
+                        }
+                    }
+                }
+            }
+
+            .image {
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}

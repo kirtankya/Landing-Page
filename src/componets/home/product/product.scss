@@ -1,0 +1,98 @@
+@import '../../../sass/global.scss';
+
+.product-background {
+    padding: var(--background-padding);
+    text-align: var(--center);
+
+    .main-background-text {
+        h2 {
+            @include heading-2;
+            text-align: var(--center);
+            margin-bottom: 20px
+        }
+
+        span {
+            display: block;
+            @include paragraph-sm;
+            text-align: var(--center);
+        }
+
+        .box-grid {
+            @include grid-3;
+
+            .box {
+                margin-top: 20px;
+
+                .box-conatine {
+                    p {
+                        @include paragraph-sm;
+                    }
+
+                    h3 {
+                        @include paragraph;
+                    }
+
+
+                }
+
+                .box-button {
+                    .button {
+                        button {
+                            border: 2px solid var(--color-light-color);
+                            margin-top: 20px;
+                            border-radius: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .product-background {
+        .main-background-text {
+            h2 {
+                @include heading-3;
+                text-align: var(--center);
+                margin-bottom: 20px
+            }
+
+            span {
+                display: block;
+                @include paragraph-sm;
+                text-align: var(--center);
+            }
+
+            .box-grid {
+                @include grid-1;
+
+                .box {
+                    margin-top: 20px;
+
+                    .box-conatine {
+                        p {
+                            @include paragraph-sm;
+                        }
+
+                        h3 {
+                            @include paragraph;
+                        }
+
+
+                    }
+
+                    .box-button {
+                        .button {
+                            button {
+                                border: 2px solid var(--color-light-color);
+                                margin-top: 20px;
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

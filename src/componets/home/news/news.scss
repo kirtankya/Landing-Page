@@ -1,0 +1,54 @@
+@import '../../../sass/global.scss';
+
+.news-background {
+    padding: var(--background-padding);
+
+    p {
+        @include paragraph;
+    }
+
+    .grid-background {
+        @include grid-3;
+
+        .box {
+            max-width: 100%;
+            margin-top: 20px;
+
+            img {
+                max-width: 400px;
+                height: 300px;
+            }
+
+            h4 {
+                max-width: 380px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .news-background {
+        .grid-background {
+            @include grid-1;
+            gap: 110px;
+
+            .box {
+                max-width: 100%;
+                margin-top: 20px;
+
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                h4 {
+                    max-width: 250px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

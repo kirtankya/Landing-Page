@@ -1,0 +1,33 @@
+@mixin heading-2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+@mixin heading-3{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+@mixin paragraph {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+@mixin paragraph-1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+@mixin paragraph-sm {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@mixin button-font{
+    font-size: 16px;
+    font-weight: 500;
+}
